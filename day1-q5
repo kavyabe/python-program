@@ -1,0 +1,13 @@
+a=float(input("enter no of fresh loaves purchased"))
+b=float(input("enter no of day old loaves purchased"))
+new=185*a
+c=b*(185*60)/100
+old=b*185-c
+total=new+old
+print("regular price=185.00")
+print("amount of new leaves",new)
+print("amount of day old leaves",old)
+print("total amount",total)
+
+
+
