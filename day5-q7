@@ -1,0 +1,8 @@
+s=input("enter the string")
+k=int(input("enter the number"))
+m=s[k-1]
+l=[]
+for i in range(0,len(s),1):
+    if m==s[i]:
+        l.append(i+1)
+print(max(l))
