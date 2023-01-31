@@ -1,0 +1,25 @@
+def calculate(self, s: str) -> int:
+    map={'+','-','*','/'}
+    num=[]
+    pre_op='+'
+    cur=0
+    for item in s+'+':
+        if item==' ':
+            continue
+        elif item not in map:
+            cur = cur*10 + int(item)
+            else:
+                if pre_op=='+': 
+                    num.append(cur)
+                elif pre_op=='-':
+                    num.append(-cur)
+                elif pre_op=='*':
+                    num.append(num.pop()*cur)
+                else:
+                    num.append(int(num.pop()/cur))
+                cur=0
+                pre_op=item
+        return sum(num)
+result = Solution()
+ans = result.calculate(s = " 3+2*2 ")
+print(ans)
