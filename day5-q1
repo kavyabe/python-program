@@ -1,0 +1,10 @@
+n=input("enter the string")
+m=n.split()
+count=0
+count1=0
+for i in m[0]:
+    count=count+1
+for j in m[1]:
+    count1=count1+1
+c=max(count,count1)
+print(c)
