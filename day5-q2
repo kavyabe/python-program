@@ -1,0 +1,17 @@
+g=input("enter grade of employee")
+s=int(input("enter the salary"))
+if g=='A':
+    bonus=s*5/100
+    print("bonus",bonus)
+    salary=s+bonus
+    print("Total",salary)
+elif g=='B':
+    bonus1=s*10/100
+    print("bonus",bonus1)
+    salary=s+bonus1
+    print("Total",salary)
+elif (s<10000):
+    bonus2=s*2/100
+    print("bonus",bonus2)
+    salary=s+bonus2
+    print("Total",salary)
